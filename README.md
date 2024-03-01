@@ -1,3 +1,4 @@
-# Project_2---Gemma-Diabetes
-Second Project Git Repository
-# Why we chose to create a 
+# Diabetes in America and why we should screen for it
+Current CDC (Center for Disease Control) statistics show that about 38 million people in America (or 1 in every 10) suffer from diabetes with a whopping 1 in 5 of those people not even being aware that they have the disease. What's more shocking and perhaps more worrisome is that 98 million people, (or 1 in every 3), are considered prediabetic, with 8 out of 10 of them also not aware that they are in danger of contracting diabetes.
+With such a high rate of contracting a disease that can lead to blindness, kidney failure, heart disease, stroke, or the risk of amputating toes, feet or legs, early screening and awareness is something that can potentially benefit over 100 million Americans. Especially considering that type-2 diabetes (or adult-onset diabetes) can be prevented or treated by simply adjusting one's diet.
+This is why our group chose to create a model that could help health clinicians deliver at-risk patients a probability of their chances of contracting diabetes. In our initial conversations the group had endeavored to create a chatbot that would actually interact with patients. For various reasons (stated in the "Data" section below) we abandoned the idea of interacting with patients and instead pivoted to gearing the model toward health clinicians who would be running tests on patients.
