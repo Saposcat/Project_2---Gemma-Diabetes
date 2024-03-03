@@ -21,8 +21,7 @@ Section 6: Data Optimization
 Section 7: Conclusion
 
 # Section 1: Overview
-
-Current CDC (Center for Disease Control) statistics show that about 38 million people in America (or 1 in every 10) suffer from diabetes with a whopping 1 in 5 of those people not even being aware that they have the disease. What's more shocking and perhaps more worrisome is that 98 million people, (or 1 in every 3), are considered prediabetic, with 8 out of 10 of them also not aware that they are in danger of contracting diabetes.(work cited - 1)
+Current CDC (Center for Disease Control) statistics show that about 38 million people in America (or 1 in every 10) suffer from diabetes with a whopping 1 in 5 of those people not even being aware that they have the disease. What's more shocking and perhaps more worrisome is that 98 million people, (or 1 in every 3), are considered prediabetic, with 8 out of 10 of them also not aware that they are in danger of contracting diabetes.[1]
 
 With such a high rate of contracting a disease that can lead to blindness, kidney failure, heart disease, stroke, or the risk of amputating toes, feet or legs, early screening and awareness is something that can potentially benefit over 100 million Americans. Especially considering that type-2 diabetes (or adult-onset diabetes) can be prevented or treated by simply adjusting one's diet.
 
@@ -34,7 +33,7 @@ While the final objective of this project would still be to eventually create a 
 At the end of the day the focus remains the same. To create a tool to decide a) does this patient currently have diabetes and b) what is the probablitity that the patient will contract diabetes considering their test scores.
 
 # Section 3: Data Collection
-The search for data was relatively painless for this project. The group settled on a data set that we found on Kaggle (work cited - 2) that included nine initial fields, most of which are generally considered indicators for diabetes (age, hypertension, smoking history, blood glucose level, body mass index, HbA1c level and gender). The data set was comprimised of 100,000 patients giving us a healthy sample size. 
+The search for data was relatively painless for this project. The group settled on a data set that we found on Kaggle [2] that included nine initial fields, most of which are generally considered indicators for diabetes (age, hypertension, smoking history, blood glucose level, body mass index, HbA1c level and gender). The data set was comprimised of 100,000 patients giving us a healthy sample size. 
 
 Initially we had planned to create this chatbot for patients to use. We pivoted, given that the data set included clinical categories that a patient might not be aware of like, hypertension and blood glucose levels, HbA1c scores or body mass index. As such, we decided that qualified health clinicians would be a better target audience with the idea that the chatbot would function as a quick screener that could be utilized and reviewed by a health professional who could administer the tests and create a health care plan.
 
@@ -49,15 +48,7 @@ After optimizing the data we did our due diligence and checked the accuracy scor
 All in all these are the methods we used and their respective libraries. We used pandas to read the .csv file into a DataFrame. We used Python to assure the quality of the data set, check value counts and check data types. We utilized matplotlib to create a correlation plot of the X_train variables. Finally we used Sklearn to run the Logistic Regression model, the Random Forest model, the train_test_splits and the accuracy scores.
 
 # Section 7: Data Optimization
-To optimize our data we chose to oversample and undersample our two main models (Linear Regression and Random Forest) to combat against bias and the false-negatives we were encountering. There was a concern with the Random Forest classifier, as it had an accuracy score of 99%, being overfit. 
-
-Logistic Regression: 
-- oversampled and undersampled
-Random Forest: 
-- oversampled and undersampled
-- Concern of the Random Forest classifier being overfit
-- cross validated with hyperparameter tuning, suggested that the model was not overfit (97%)
-- but since we oversampled to the degree that we did, whether or not the model was overfit is inconclusive.
+To optimize our data we chose to oversample and undersample our two main models (Linear Regression and Random Forest) to combat against bias and the false-negatives we were encountering. There was a concern with the Random Forest classifier, as it had an accuracy score of 99%, being overfit. To treat this the group cross validated the model with hyperparameter tuning which brought the accuracy score down to 97% which asuaged the concern a little bit but was still inconclusive.
 
 # Section 8: Conclusion
 There was debate within the group as to what model would be best for our project but ultimately we landed on using a Logistic Regression model because of it's flexibility and the fact that it provides the user with a percentage of likelihood rather than just classifying a patient as diabetic or non-diabetic. Althouth the accuracy score for the Logistic Regression was only 88% (in comparison to the 99% accuracy score of the Random Forest classifier), it's ability to git a percentage to a health clinician made for a more reliable model in the field. 
