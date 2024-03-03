@@ -1,4 +1,15 @@
-# Diabetes in America and why we should screen for it
+
+# Project Title: Diabetes in America and why we should screen for it early
+# Group 5 (Edilberto Vinas, Al Wagner, Frances Hollan, Nick Santos)
+
+# Sections Included
+Section 1: Overview
+Section 2: Scope
+Section 3: Data Collection
+Section 4: Data Cleaning
+Section 5: Approach and Methodology
+Section 6: 
+
 Current CDC (Center for Disease Control) statistics show that about 38 million people in America (or 1 in every 10) suffer from diabetes with a whopping 1 in 5 of those people not even being aware that they have the disease. What's more shocking and perhaps more worrisome is that 98 million people, (or 1 in every 3), are considered prediabetic, with 8 out of 10 of them also not aware that they are in danger of contracting diabetes.(work cited - 1)
 
 With such a high rate of contracting a disease that can lead to blindness, kidney failure, heart disease, stroke, or the risk of amputating toes, feet or legs, early screening and awareness is something that can potentially benefit over 100 million Americans. Especially considering that type-2 diabetes (or adult-onset diabetes) can be prevented or treated by simply adjusting one's diet.
@@ -23,4 +34,18 @@ Since the answers are a binary "yes" or "no" to our query of, "does the patient 
 
 After optimizing the data we did our due diligence and checked the accuracy score of the logistic regression model against other predictive models using an accuracy score pipeline which gave us a surprising outcome. After running the optimized data through the different models we found that the Random Forest classifier actually gave us the most accurate model, scoring an accuracy score of 99%. Although we all acknowledged the risk of having a slightly overfit model the decision was that we were willing to live with more false-positives (given that the penalty for a false-positive in our case was not that severe).
 
-All in all these are the methods we used and their respective libraries. We used pandas to read the .csv file into a DataFrame. We used Python to assure the quality of the data set, check value counts and check data types. We util...
+All in all these are the methods we used and their respective libraries. We used pandas to read the .csv file into a DataFrame. We used Python to assure the quality of the data set, check value counts and check data types. We utilized matplotlib to create a correlation plot of the X_train variables. Finally we used Sklearn to run the Logistic Regression model, the Random Forest model, the train_test_splits and the accuracy scores.
+
+# Data Optimization
+Logistic Regression: 
+- oversampled and undersampled
+Random Forest: 
+- oversampled and undersampled
+- cross validated with hyperparameter tuning, suggested that the model was not overfit (97%)
+- but since we oversampled to the degree that we did, whether or not the model was overfit is inconclusive.
+
+# Conclusion
+There was debate within the group as to what model would be best for our project but ultimately we landed on using a Logistic Regression model because of it's flexibility and the fact that it provides the user with a percentage of likelihood rather than just classifying a patient as diabetic or non-diabetic. Althouth the accuracy score for the Logistic Regression was only 88% (in comparison to the 99% accuracy score of the Random Forest classifier), it's ability to git a percentage to a health clinician made for a more reliable model in the field. 
+
+The Logistic Regression model also put the onus on a qualified health clinician to make the final call. It provides them the chance to adjust where in that percentage spectrum a "yes" or "no" determination would land. So although the Random Forest classifier gave a higher accuracy score, the Logistic Regression model made more sense in a clinical setting considering that there would be other factors (HbA1c score, medical history, etc.) that would go into the final diagnoses. 
+
