@@ -12,13 +12,13 @@ Group 5 notebook: https://colab.research.google.com/drive/1nHaYV428N4MQWNnT6yVkw
 2. Diabetes Prediction - https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset
 
 ## Sections Included
-Section 1: Overview
-Section 2: Scope
-Section 3: Data Collection
-Section 4: Data Cleaning
-Section 5: Approach and Methodology
-Section 6: Data Optimization
-Section 7: Conclusion
+Section 1: Overview<br>
+Section 2: Scope<br>
+Section 3: Data Collection<br>
+Section 4: Data Cleaning<br>
+Section 5: Approach and Methodology<br>
+Section 6: Data Optimization<br>
+Section 7: Conclusion<br>
 
 # Section 1: Overview
 Current CDC (Center for Disease Control) statistics show that about 38 million people in America (or 1 in every 10) suffer from diabetes with a whopping 1 in 5 of those people not even being aware that they have the disease. What's more shocking and perhaps more worrisome is that 98 million people, (or 1 in every 3), are considered prediabetic, with 8 out of 10 of them also not aware that they are in danger of contracting diabetes.[1]
