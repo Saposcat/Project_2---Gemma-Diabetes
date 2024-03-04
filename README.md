@@ -10,6 +10,7 @@ Group 5 notebook: https://colab.research.google.com/drive/1nHaYV428N4MQWNnT6yVkw
 ## Works cited
 1. Center for Disease Control - https://diabetes.org/about-diabetes/statistics/about-diabetes
 2. Diabetes Prediction - https://www.cdc.gov/diabetes/library/socialmedia/infographics/diabetes.html
+3. Google Colab AI
 
 ## Sections Included
 Section 1: Overview<br>
